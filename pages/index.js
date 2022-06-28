@@ -4,8 +4,6 @@ import { SessionProvider,useSession } from 'next-auth/react'
 
 export default function Index() {
   return (
-    <Layout>
-        <Sidebar />
         <section>
             <h2>Layout Example (Index)</h2>
             <p>
@@ -32,7 +30,6 @@ export default function Index() {
                 state is persisted.
             </p>
         </section>
-    </Layout>
     
   )
 }

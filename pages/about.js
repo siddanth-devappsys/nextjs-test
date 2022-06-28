@@ -38,7 +38,6 @@ function About() {
                         </p>
                     </section>
             </Layout>
-           
           )
        }
     else{

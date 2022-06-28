@@ -1,14 +1,16 @@
 import '../styles/globals.css'
 import '../scss/user/custom.scss'
 import { SessionProvider } from "next-auth/react"
+import Layout from '../component/layout'
+import Sidebar from '../component/sidebar'
 
 
 function MyApp({ Component, pageProps:{session,...pageProps} }) {
-  const getLayout = Component.getLayout || ((page) => page)
+//   const getLayout = Component.getLayout || ((page) => page)
 
-  return getLayout(
+  return(
       <SessionProvider session={pageProps.session}>
-        <Component {...pageProps} />
+            <Component {...pageProps} />
       </SessionProvider>
     )
 }
